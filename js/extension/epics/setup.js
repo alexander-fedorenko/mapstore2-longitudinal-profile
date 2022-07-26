@@ -100,7 +100,7 @@ export const setupLongitudinalExtension = (action$, store) =>
         })
         .catch((e) => {
             console.log(e); // eslint-disable-line no-console
-            return Rx.Observable.of(error({ title: "Error", message: "longitudinal.errors.unableToSetupPlugin" }));
+            return Rx.Observable.of(error({ title: "notification.error", message: "longitudinal.errors.unableToSetupPlugin" }));
         });
 
 /**
